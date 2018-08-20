@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/DavidZafa/Project3DTSBackEnd/issues"
   },
-  "homepage": "https://github.com/DavidZafa/Project3DTSBackEnd#readme"
+  "homepage": "https://github.com/DavidZafa/Project3DTSBackEnd#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "passport": "^0.4.0"
+  }
 }
