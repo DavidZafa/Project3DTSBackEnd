@@ -9,10 +9,11 @@ const newsController = require("../controllers/news");
 
 
 // Animals routes
-router.get("/animals", animalsController.show)
+router.get("/animals", animalsController.index)
+
 
 //News routes
-router.get("/news", newsController.show)
+router.get("/news", newsController.index)
 
 //Error routes
 router.all('*', (req,res) => {

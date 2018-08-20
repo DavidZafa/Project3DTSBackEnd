@@ -1,8 +1,13 @@
 const Animals = require("../models/Animals")
 
 module.exports = {
-    show: (req, res) => {
-        Animals.find({})
-        .populate ("")
+    index: (req, res) => {
+        Animals.find()
+          .then(animals => {
+              res.json(animals)
+          })
+          .catch((err) => {
+              console.log(err)
+          })
     }
 }
