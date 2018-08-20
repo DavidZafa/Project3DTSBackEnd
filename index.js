@@ -7,7 +7,7 @@ app.set('port', process.env.PORT || 3001)
 app.use(parser.json())
 app.use(cors())
 
-app.use(require('./routes'))
+app.use(require('./routes/index'))
 
 app.listen(app.get('port'), () => {
     console.log('GET READY TO GET RICKETY RICKETY RECKED - on port 3001')

@@ -5,7 +5,11 @@ const animalsController = require("../controllers/animals");
 const newsController = require("../controllers/news");
 
 //User Routes
+router.post('/user/login', userController.createLogin)
+router.post('/user/signup', userController.createSignUp)
+// router.get('/user/logout', userController.logout)
 
+router.get('/user/:id', userController.show)
 
 
 // Animals routes
@@ -14,8 +18,8 @@ const newsController = require("../controllers/news");
 
 //News routes
 
-router.all('*', (req,res) => {
-    res.status(400), send()
-})
+// router.all('*', (req,res) => {
+//     res.status(400), send()
+// })
 
 module.exports = router
