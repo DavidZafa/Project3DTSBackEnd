@@ -13,11 +13,12 @@ router.get('/user/:id', userController.show)
 
 
 // Animals routes
-
-
+router.get("/animals", animalsController.show)
 
 //News routes
+router.get("/news", newsController.show)
 
+//Error routes
 router.all('*', (req,res) => {
     res.status(400), send()
 })
