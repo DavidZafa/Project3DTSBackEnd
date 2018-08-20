@@ -18,8 +18,8 @@ router.get('/user/:id', userController.show)
 
 //News routes
 
-// router.all('*', (req,res) => {
-//     res.status(400), send()
-// })
+router.all('*', (req,res) => {
+    res.status(400), send()
+})
 
 module.exports = router
