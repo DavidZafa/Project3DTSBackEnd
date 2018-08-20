@@ -1,0 +1,19 @@
+{
+  "name": "project3dtsbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidZafa/Project3DTSBackEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidZafa/Project3DTSBackEnd/issues"
+  },
+  "homepage": "https://github.com/DavidZafa/Project3DTSBackEnd#readme"
+}
