@@ -6,8 +6,10 @@ const Animals = new Schema({
     species: String,
     picture: String,
     region: String,
+    habitat: String,
     endangeredLvl: String,
-    population: Number
+    population: String,
+    about: String
 })
 
 module.exports = mongoose.model("Animals", Animals)

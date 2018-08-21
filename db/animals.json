@@ -1,10 +1,192 @@
 [
-    {
-        "name" : "Dugong",
-        "species" : "testing",
-        "picture": "testing",
-        "region": "testing",
-        "endangeredLvl" : "Vulnerable",
-        "population" : 200
-    }
+  {
+    "name": "Dugong",
+    "species": "Dugong dugon",
+    "picture": "testing",
+    "region": "Coastal East Africa, Coral Triangle",
+    "habitat": "Ocean Habitat",
+    "endangeredLvl": "Vulnerable",
+    "population": "4490 as of late 1990 estimates",
+    "about": "Commonly known as sea cows, Dugongs are marine mamals that graze peacefully on sea grasses in shallow coastal waters of the Indian and western Pacific Oceans. Their numbers are threatened by sea grass habitat loss or degradation due to coastal development or industrial activities that cause water pollution."
+  },
+  {
+    "name": "Sumatran tigers",
+    "species": "Panthera tigris sumatrae",
+    "picture": "testing",
+    "region": "Sumatra and Borneo",
+    "habitat": "Temperate forest",
+    "endangeredLvl": "Critially Endangered",
+    "population": "less than 400",
+    "about": "This tiger subspecies is found exclusively on the Indonesian island of Sumatra. They are the smallest surving subspecies, distunguished by their heavy black stripes. Accelerating deforestation and rampant poaching are the main reasons for their near extinction."
+  },
+  {
+    "name": "Amur Leopard",
+    "species": "Panthera pardus orientalis",
+    "picture": "testing",
+    "region": "Amur-Heilong",
+    "habitat": "Forest Habitat, Mountains",
+    "endangeredLvl": "Critically Endangered",
+    "population": "more than 84",
+    "about": "Also known as the Manchurian or Korean leopard, the Amur leopard are a subspecies that lives in the Russian Far East.The greatest threats to their sustainabilty are prey scarcity and illegal poaching."
+  },
+  {
+    "name": "Narwhal",
+    "species": "Monodon monoceros",
+    "picture": "testing",
+    "region": "Arctic",
+    "habitat": "Ocean Habitat",
+    "endangeredLvl": "Near Threatened",
+    "population": "More than 80,000",
+    "about": "Narwhals look like a cross between a whale and unicorn with a long spiraled tusk jutting from its head. They spend their lives in the Arctic waters of Canada, Greenland, Norway, and Russia. Climate change is the greatest threat to conservation along with oil and gas development and ocean noise."
+  },
+  {
+    "name": "Borneo Pygmy Elephant",
+    "species": "Elephas maximus borneensis",
+    "picture": "testing",
+    "region": "Borneo and Sumatra",
+    "habitat": "Forest Habitat",
+    "endangeredLvl": "Endangered",
+    "population": "Approximately 1500",
+    "about": "The pygmy elephants of Borneo are baby-faced with oversized ears, plump bellies and long tails. They are genetically different than other Asian elephants and gentler than their counterparts. The smallest elephants in Asia, the greatest threats to their survival are conlflict with humans and habitat loss. "
+  },
+  {
+    "name": "Bonobo",
+    "species": "Pan paniscus",
+    "picture": "testing",
+    "region": "Congo Basin",
+    "habitat": "Forest Habitat",
+    "endangeredLvl": "Endangered",
+    "population": "10,000 to 50,000",
+    "about": "Bonobos look like chimpanzees but are usually smaller, leaner, darker, and less understood. They are gentler than chimpanzees and led by females. Poaching and habitat loss from the civil unrest in the region are the leading causes of rapid population decline."
+  },
+  {
+    "name": "Greater sage-grouse",
+    "species": "Centrocercus urophasianus",
+    "picture": "testing",
+    "region": "Northern Great Plains",
+    "habitat": "Grasslands",
+    "endangeredLvl": "Near Threatened",
+    "population": "100,000 to 500,000",
+    "about": "Iconic large birds in western U.S. and Canada, the Greater sage-grouse were once found across 13 western U.S states and 3 Canadian provinces. They are known for their spectacular mating dances; howecer, the oil and gas development, land conversion for agriculture, and climate change, these magnificent birds are facing a rapid decline."
+  },
+  {
+    "name": "Mountain Gorilla",
+    "species": "Gorilla beringei beringei",
+    "picture": "testing",
+    "region": "Congo Basin",
+    "habitat": "Forest Habitat, Mountains",
+    "endangeredLvl": "Critically Endangered",
+    "population": "880",
+    "about": "The mountain gorillas live in forests high inthe mountains, at elevations of 8,000 to 13,000 feet. They are the world's smaleest population of mountain gorillas and have been pushed farther north to uninhabitable conditions because of civil unrest, habitat loss, and poaching."
+  },
+  {
+    "name": "Marine iguana",
+    "species": "Amblyrhynchus cristatus",
+    "picture": "testing",
+    "region": "`Galápagos`",
+    "habitat": "Ocean",
+    "endangeredLvl": "Vulnerable",
+    "population": "unknown",
+    "about": "Marine iguanas are the world's only oceangoing lizard and only found in the `Galápagos`. The marine iguanas reside on a central tourist beach in Perto Villamil on Isabel Island, sharing their home with tourists. As more people move to the island, the largest threat are introduced species like cats and dogs, along with climate change. "
+  },
+  {
+    "name": "Sumatran rhinos",
+    "species": "Dicerorhinus sumatrensis",
+    "picture": "testing",
+    "region": "Borneo and Sumatra",
+    "habitat": "Forest Habitat",
+    "endangeredLvl": "Critically Endangered",
+    "population": "Less than 100",
+    "about": "Smallest of the rhinos, they are the only Asian rhino with two horns and most closely related to the extinct woolly rhinos. These rhinos are so rare and elusive that even the most senior rangers have never seen the animal in the wild. The illegal wildlife trade, habitat loss, and lack of protection are the greatest factor for the endangerment."
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  },
+  {
+    "name": "Dugong",
+    "species": "testing",
+    "picture": "testing",
+    "region": "testing",
+    "endangeredLvl": "Vulnerable",
+    "population": 200,
+    "about": "dsdfsdfsdf"
+  }
 ]

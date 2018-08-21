@@ -5,9 +5,9 @@ const animalsController = require("../controllers/animals");
 const newsController = require("../controllers/news");
 
 //User Routes
-router.post('/user/login', userController.createLogin)
+// router.post('/user/login', userController.createLogin)
 router.post('/user/signup', userController.createSignUp)
-// router.get('/user/logout', userController.logout)
+router.get('/user/logout', userController.logout)
 
 router.get('/user/:id', userController.show)
 
@@ -17,11 +17,11 @@ router.get("/animals", animalsController.index)
 
 
 //News routes
-router.get("/news", newsController.index)
+// router.get("/news", newsController.index)
 // router.get("/animals", animalsController.show)
 
 //News routes
-// router.get("/news", newsController.show)
+router.get("/news", newsController.index)
 
 
 //Error routes
