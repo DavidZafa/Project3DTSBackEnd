@@ -13,18 +13,16 @@ router.get('/user/:id', userController.show)
 
 
 // Animals routes
-<<<<<<< HEAD
 router.get("/animals", animalsController.index)
 
 
 //News routes
 router.get("/news", newsController.index)
-=======
 // router.get("/animals", animalsController.show)
 
 //News routes
 // router.get("/news", newsController.show)
->>>>>>> 88fb983ea9ab37976329091b4756771382015972
+
 
 //Error routes
 // router.all('*', (req,res) => {
