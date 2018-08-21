@@ -2,8 +2,8 @@ const mongoose = require("../models/User")
 const User = mongoose.model('User')
 const config = require("../config/config")
 const jwt = require('jwt-simple')
-const Animals = require("../models/Animals")
-const News = require("../models/News")
+// const Animals = require("../models/Animals")
+// const News = require("../models/News")
 
 
 module.exports = {

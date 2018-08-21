@@ -1,9 +1,9 @@
-const passport = require('passport')
-const passportJWT = require('passport-jwt')
-const ExtractJwt = passportJWT.ExtractJwt
-const Strategy = passportJWT.Strategy
+const passport = require("passport");
+const passportJWT = require("passport-jwt");
+const ExtractJwt = passportJWT.ExtractJwt;
+const Strategy = passportJWT.Strategy;
 
-const config = require('./config')
+const config = require("./config");
 
 const mongoose = require('../models/User')
 const User = mongoose.model('User')
@@ -11,7 +11,7 @@ const User = mongoose.model('User')
 const params = {
   secretOrKey: config.jwtSecret,
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken()
-}
+};
 
 module.exports = function () {
   let strategy = new Strategy(params, (payload, callback) => {
