@@ -1,5 +1,10 @@
 [
     {
-        
+        "name" : "Dugong",
+        "species" : "testing",
+        "picture": "testing",
+        "region": "testing",
+        "endangeredLvl" : "Vulnerable",
+        "population" : 200
     }
 ]
