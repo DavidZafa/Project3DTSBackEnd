@@ -19,8 +19,8 @@ router.get('/user/:id', userController.show)
 // router.get("/news", newsController.show)
 
 //Error routes
-router.all('*', (req,res) => {
-    res.status(400), send()
-})
+// router.all('*', (req,res) => {
+//     res.status(400), send()
+// })
 
 module.exports = router
