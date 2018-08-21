@@ -10,6 +10,7 @@ module.exports = {
     show: (req, res) => {
         User.findOne({_id: req.params.id})
         .populate("animals")
+        .populate("news")
         .then(res => {
             res.json()
         })
@@ -67,5 +68,11 @@ module.exports = {
       } else {
         res.sendStatus(401)
       }
+    },
+    addAnimal: (req, res) => {
+      User.findOne({_id: req.params.id})
+      .then(user => {
+        Animal.findOne({name: req.body.animalname})
+      })
     }
 }

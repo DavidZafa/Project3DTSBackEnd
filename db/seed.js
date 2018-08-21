@@ -1,10 +1,14 @@
 const Animal = require('../models/Animals')
 const animalData = require('./animals.json')
 
-Animal.remove({})
+const News = require('../models/News')
+const newsData = require('./news.json')
+
+Animal.deleteMany({})
     .then(() => {
-        Animal.collection.insert(animalData)
+        Animal.collection.insertMany(animalData)
         .then(animal => {
+            console.log(animal)
             process.exit()
         })
     })
