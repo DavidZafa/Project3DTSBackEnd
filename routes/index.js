@@ -27,8 +27,8 @@ router.get("/news", newsController.index)
 >>>>>>> 88fb983ea9ab37976329091b4756771382015972
 
 //Error routes
-router.all('*', (req,res) => {
-    res.status(400), send()
-})
+// router.all('*', (req,res) => {
+//     res.status(400), send()
+// })
 
 module.exports = router

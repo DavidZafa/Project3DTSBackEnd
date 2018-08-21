@@ -1,10 +1,10 @@
-const User = require("../models/User")
-const mongoose = require('../models/User')
+const mongoose = require("../models/User")
+const User = mongoose.model('User')
 const config = require("../config/config")
-const passport = require("../config/passport")
 const jwt = require('jwt-simple')
-const Animals = require("../models/Animals")
-const News = require("../models/News")
+// const Animals = require("../models/Animals")
+// const News = require("../models/News")
+
 
 module.exports = {
     show: (req, res) => {
@@ -38,37 +38,34 @@ module.exports = {
       }
         },
     createSignUp: (res, req) => {
-      router.post('/signup', (req, res) => {
-        if (req.body.email && req.body.password) {
-          let newUser = {
-            email: req.body.email,
-            password: req.body.password
-          }
-          console.log(newUser)
-          User.findOne({ email: req.body.email })
-            .then((user) => {
-              if (!user) {
-                User.create(newUser)
-                  .then(user => {
-                    if (user) {
-                      var payload = {
-                        id: newUser.id
-                      }
-                      var token = jwt.encode(payload, config.jwtSecret)
-                      res.json({
-                        token: token
-                      })
-                    } else {
-                      res.sendStatus(401)
-                    }
-                  })
-              } else {
-                res.sendStatus(401)
-              }
-            })
-        } else {
-          res.sendStatus(401)
+      if (req.body.email && req.body.password) {
+        let newUser = {
+          email: req.body.email,
+          password: req.body.password
         }
-      })
+        User.findOne({ email: req.body.email })
+          .then((user) => {
+            if (!user) {
+              User.create(newUser)
+                .then(user => {
+                  if (user) {
+                    var payload = {
+                      id: newUser.id
+                    }
+                    var token = jwt.encode(payload, config.jwtSecret)
+                    res.json({
+                      token: token
+                    })
+                  } else {
+                    res.sendStatus(401)
+                  }
+                })
+            } else {
+              res.sendStatus(401)
+            }
+          })
+      } else {
+        res.sendStatus(401)
+      }
     }
 }
