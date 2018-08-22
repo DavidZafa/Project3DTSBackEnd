@@ -27,18 +27,14 @@ const parser = require('body-parser')
 const cors = require('cors')
 const passport = require('./config/passport')()
 
-
 const app = express()
+// const userController = require('./controllers/user.js')
 
 app.use(cors())
 app.use(parser.json())
 app.use(passport.initialize())
 
-
-//for the user routes, you use the setup from the lab
-//for the other routes, you do whatever you had already worked on
-//remove all references to the user fron the routes/index.js and move them to the router-with-controller setup
-app.use(require('./routes/index.js'))
+app.use(require('./routes/index'))
 
 app.set('port', process.env.PORT || 3001)
 app.listen(app.get('port'), () => {
