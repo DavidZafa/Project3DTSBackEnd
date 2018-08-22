@@ -3,9 +3,6 @@ const animalData = require('./animals.json')
 const News = require('../models/News')
 const newsData = require('./news.json')
 
-const News = require('../models/News')
-const newsData = require('./news.json')
-
 Animal.deleteMany({})
     .then(() => {
         Animal.collection.insertMany(animalData)

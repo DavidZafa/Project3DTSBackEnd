@@ -10,7 +10,7 @@ module.exports = {
         User.findOne({_id: req.params.id})
         .populate("animalList")
         .then(user => {
-            res.json()
+            res.json(user)
         })
     },
     createLogin: (req,res) => {
@@ -67,26 +67,30 @@ module.exports = {
         res.sendStatus(401)
       }
     },
-    // addAnimal: (req, res) => {
-    //   User.findOne({_id: req.params.id})
-    //   .then(user => {
-    //     Animal.findOne({name: req.body.animalname})
-    //     .then(animal => {
-    //       console.log(animal)
-    //       user.animals.push(animal)
-    //       user.save()
-    //     })
-    //   })
-    // },
-    // removeAnimal: (req, res) => {
-    //   User.findOne({_id: req.params.id})
-    //   .then(user => {
-    //     Animal.findOne({name: req.body.animalname})
-    //     .then(animal => {
-    //       console.log(animal)
-    //       user.animals.push(animal)
-    //       user.save()
-    //     })
-    //   })
-    // }
+    addAnimal: (req, res) => {
+      User.findById(req.params.id)
+      .then(user => {
+        Animals.findOne({name: req.body.animalname})
+        .then(animal => {
+          user.animalList.push(animal)
+          user.save()
+          console.log(user)
+        })
+
+      })
+    },
+    removeAnimal: (req, res) => {
+      User.findOne({_id: req.params.id})
+      .then(user => {
+        Animals.findOne({name: req.body.animalname})
+        .then(animal => {
+          user.animalList.pull(animal)
+          user.save()
+          console.log(user)
+        })
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    }
 }
