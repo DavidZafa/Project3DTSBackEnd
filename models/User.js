@@ -2,7 +2,6 @@ const mongoose = require('../db/connection')
 const Schema = mongoose.Schema
 
 const User = new Schema ({
-    _id: Schema.Types.ObjectId,
     imageUrl: String,
     email: String,
     password: String,

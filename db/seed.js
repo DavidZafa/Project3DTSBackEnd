@@ -3,7 +3,7 @@ const animalData = require('./animals.json')
 const News = require('../models/News')
 const newsData = require('./news.json')
 
-Animal.remove({})
+Animal.deleteMany({})
     .then(() => {
         Animal.collection.insertMany(animalData)
         .then(animal => {
