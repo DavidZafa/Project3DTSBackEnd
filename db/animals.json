@@ -84,7 +84,7 @@
     "species": "Amblyrhynchus cristatus",
     "picture": "testing",
     "region": "`Galápagos`",
-    "habitat": "Ocean",
+    "habitat": "Ocean Habitat",
     "endangeredLvl": "Vulnerable",
     "population": "unknown",
     "about": "Marine iguanas are the world's only oceangoing lizard and only found in the `Galápagos`. The marine iguanas reside on a central tourist beach in Perto Villamil on Isabel Island, sharing their home with tourists. As more people move to the island, the largest threat are introduced species like cats and dogs, along with climate change. "
@@ -100,93 +100,103 @@
     "about": "Smallest of the rhinos, they are the only Asian rhino with two horns and most closely related to the extinct woolly rhinos. These rhinos are so rare and elusive that even the most senior rangers have never seen the animal in the wild. The illegal wildlife trade, habitat loss, and lack of protection are the greatest factor for the endangerment."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "Kagu",
+    "species": "Rhynochetos jubatus",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "New Caledonia",
+    "habitat": "Forest Habitat",
+    "endangeredLvl": "Critically Endangered",
+    "population": "Less than 2000",
+    "about": "Found on Grand Terre, the largest and moutainous island of New Caledonia, the Kagu is a rare and flightless bird that is the only surviving species of its taxonomic family. The Kagu's startling ash-white plumage has given them the nickname 'ghost of the forest.' They have a distinct 'bark' that can be heard over a mile away. Dogs and predation by introduced species like cats, pigs, and rats, along with habitat loss are the greatest threat to Kagu existence."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "African Wild Dogs",
+    "species": "Lycaon pictus",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "Coastal East Africa",
+    "habitat": "Forest Habitat, Grasslands, Deserts",
+    "endangeredLvl": "Endangered",
+    "population": "6600",
+    "about": "One of the world's most endangered mammals, wild dogs gather in packs of about 10 to 40. Largest populations remain in southern Africa and southern part of East Africa, especially Tanzania and northern Mozambique. Kilings by humans, viral disease, habitat loss, and competition with larger predators are reasons for their dwindling population."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "Saola",
+    "species": "Pseudoryx nghetinhensis",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "Greater Mekong",
+    "habitat": "Forest Habitat",
+    "endangeredLvl": "Critically Endangered",
+    "population": "Unknown",
+    "about": "Only discovered 26 years ago in May 1992, Saola have two parallel horns with sharp ends, which can reach 20 inches in length. Exclusive to the Annamite Mountains of Vietnam and Laos, they are extremely rare. Hunting, habitat loss, and deforestastion from rapid and large-scale modernization are the main reasons for their dwindling numbers."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "Black-footed Ferret",
+    "species": "Mustela nigripes",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "Northern Great Plains",
+    "habitat": "Grasslands",
+    "endangeredLvl": "Endangered",
+    "population": "Approximately 370 in the wild",
+    "about": "Once thought extinct, the black-footed ferrets are making a comeback. They are the only ferret species native to North America. Although conservation efforts are helping revive their population, habitat loss and non-native disease still remain key threats to their survival."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "Hector's Dolphins",
+    "species": "Cephalorhynchus hectori",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "New Zealand",
+    "habitat": "Ocean Habitat",
+    "endangeredLvl": "Endangered",
+    "population": "Estimated at 7000",
+    "about": "Hector's dolphins are the smallest and rarest marine dolphins. They have distinct black facial markings, short stocky bodies, and dorsal fin shaped like Mickey Mouse ears. Only found in the shallow coastal waters along the western shores of North Island, bycatch is the biggest problem for the dolphins, along with, pollution in their habiats, and coastal development. "
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "Red Panda",
+    "species": "Ailurus fulgens",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "Eastern Himalayas",
+    "habitat": "Forest Habitat",
+    "endangeredLvl": "Endangered",
+    "population": "less than 10000",
+    "about": "Recognized by their thick russet fur and white facial markings, red pandas are very skillful and acrobatic animals that predominantly stay in trees. Climate change and loss of nesting trees are the greatest cause of decline in population, along with poaching."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "`Grevy's` Zebra",
+    "species": "Equus grevyi",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "Kenya and Samburu",
+    "habitat": "Grasslands and savannas",
+    "endangeredLvl": "Endangered",
+    "population": "2000",
+    "about": "Taller than the plains zebras, Grevy's sebra also have larger ears and narrower stripes than plains zebras. Extreme habitat loss and hunting are the primary causes for their decline."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "Central American River Turtle",
+    "species": "Dermatemys mawii",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "Belize, southern Mexico, Guatemala",
+    "habitat": "River Habitat",
+    "endangeredLvl": "Critically Endangered",
+    "population": "Exact number unknown",
+    "about": "These nocturnal reptiles are the sole surviving species and can trace their lineage back to the time of dinosaurs. The Central American River turtle is completely aquatic and feeds on plant matter. They are highly coveted for their tasty meat, so overexploitation, coupled with rapid loss of habitat are the reasons for their near extinction."
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "North Atlantic Right Whale",
+    "species": "Eubalaena glacialis",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "North America",
+    "habitat": "Ocean Habitat",
+    "endangeredLvl": "Endangered",
+    "population": "300-350",
+    "about": "The North Atlantic right whale can easily be identified by the white calluses on its head. They are now mostly found along the Atlantic coast of North America. A long history of human exploitation, climate change, and ocean noise are the greatest threat to their existence "
   },
   {
-    "name": "Dugong",
-    "species": "testing",
+    "name": "Cross River Gorilla",
+    "species": "Gorilla gorilla diehli",
     "picture": "testing",
-    "region": "testing",
-    "endangeredLvl": "Vulnerable",
-    "population": 200,
-    "about": "dsdfsdfsdf"
+    "region": "Congo Basin",
+    "habitat": "Forest Habitat",
+    "endangeredLvl": "Critically Endangered",
+    "population": "200 to 300",
+    "about": "Very similar to the western lowland gorilla, the Cross River gorillas live in an area that is heavily populated by humans. Hunting, inbreeding, and rapid loss of habitat are the main reasons for their endangerment."
   }
 ]
