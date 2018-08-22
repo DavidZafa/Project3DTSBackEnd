@@ -26,11 +26,6 @@ const express = require('express')
 const parser = require('body-parser')
 const cors = require('cors')
 const passport = require('./config/passport')()
-const userController = require("./controllers/user");
-
-
-// const dogController = require('./controllers/dogs.js')
-// const userController = require('./controllers/users.js')
 
 
 const app = express()
@@ -43,18 +38,7 @@ app.use(passport.initialize())
 //for the user routes, you use the setup from the lab
 //for the other routes, you do whatever you had already worked on
 //remove all references to the user fron the routes/index.js and move them to the router-with-controller setup
-
-app.use("/users", userController)
-
-// app.use(require('./routes/index.js'))
-
-// app.use('/users', userController)
-
-
-
-// app.use('/api/dogs', dogController)
-
-// app.listen(3002, () => console.log('Listening on port 3002 :)'))
+app.use(require('./routes/index.js'))
 
 app.set('port', process.env.PORT || 3001)
 app.listen(app.get('port'), () => {
