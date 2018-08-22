@@ -5,28 +5,21 @@ const animalsController = require("../controllers/animals");
 const newsController = require("../controllers/news");
 
 //User Routes
-// router.post('/user/login', userController.createLogin)
-router.post('/user/signup', userController.createSignUp)
-router.get('/user/logout', userController.logout)
+router.post("/user/login", userController.createLogin);
+router.post("/user/signup", userController.createSignUp);
+// router.get("/user/logout", userController.logout);
 
-router.get('/user/:id', userController.show)
-
+router.get("/user/:id", userController.show);
 
 // Animals routes
-router.get("/animals", animalsController.index)
-
-
-//News routes
-// router.get("/news", newsController.index)
-// router.get("/animals", animalsController.show)
+router.get("/animals", animalsController.index);
 
 //News routes
-router.get("/news", newsController.index)
-
+router.get("/news", newsController.index);
 
 //Error routes
-// router.all('*', (req,res) => {
-//     res.status(400), send()
-// })
+router.all("*", (req, res) => {
+  res.status(400), send();
+});
 
-module.exports = router
+module.exports = router;
