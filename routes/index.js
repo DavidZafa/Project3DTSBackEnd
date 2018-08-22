@@ -17,10 +17,5 @@ router.get("/animals", animalsController.index)
 //News routes
 router.get("/news", newsController.index)
 
-//Error routes
-router.all("*", (req, res) => {
-  res.status(400), send();
-});
-
 
 module.exports = router;
