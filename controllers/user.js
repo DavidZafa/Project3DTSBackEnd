@@ -7,11 +7,13 @@ const News = require("../models/News")
 
 module.exports = {
   show: (req, res) => {
-        User.findOne({_id: req.params.id})
-        .populate("animals")
-        .populate("news")
-        .then(res => {
+        User.findById(req.params.id)
+        .populate("animalList")
+        .then(user => {
             res.json()
+        })
+        .catch (err => {
+          console.log(err)
         })
     },
     createLogin: (req,res) => {
