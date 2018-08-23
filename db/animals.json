@@ -2,7 +2,7 @@
   {
     "name": "Dugong",
     "species": "Dugong dugon",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/9/91/Dugong_Marsa_Alam.jpg",
     "region": "Coastal East Africa, Coral Triangle",
     "habitat": "Ocean Habitat",
     "endangeredLvl": "Vulnerable",
@@ -12,7 +12,7 @@
   {
     "name": "Sumatran tigers",
     "species": "Panthera tigris sumatrae",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Sumatra-tiger_Panthera-tigris-sumatrae.jpg/800px-Sumatra-tiger_Panthera-tigris-sumatrae.jpg",
     "region": "Sumatra and Borneo",
     "habitat": "Temperate forest",
     "endangeredLvl": "Critially Endangered",
@@ -22,7 +22,7 @@
   {
     "name": "Amur Leopard",
     "species": "Panthera pardus orientalis",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Panthera_pardus_orientalis%2C_ZOO_Praha_495.jpg/1197px-Panthera_pardus_orientalis%2C_ZOO_Praha_495.jpg",
     "region": "Amur-Heilong",
     "habitat": "Forest Habitat, Mountains",
     "endangeredLvl": "Critically Endangered",
@@ -32,7 +32,7 @@
   {
     "name": "Narwhal",
     "species": "Monodon monoceros",
-    "picture": "testing",
+    "picture": "https://c402277.ssl.cf1.rackcdn.com/photos/5897/images/story_full_width/HI_232822_Paul_Nicklen_National_Geographic_Stock_WWFCanada.jpg?1387481771",
     "region": "Arctic",
     "habitat": "Ocean Habitat",
     "endangeredLvl": "Near Threatened",
@@ -42,7 +42,7 @@
   {
     "name": "Borneo Pygmy Elephant",
     "species": "Elephas maximus borneensis",
-    "picture": "testing",
+    "picture": "https://c1.staticflickr.com/9/8459/8074160345_e4e15a112d_b.jpg",
     "region": "Borneo and Sumatra",
     "habitat": "Forest Habitat",
     "endangeredLvl": "Endangered",
@@ -52,7 +52,7 @@
   {
     "name": "Bonobo",
     "species": "Pan paniscus",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Bonobos_2012_%28cropped%29.JPG/1280px-Bonobos_2012_%28cropped%29.JPG",
     "region": "Congo Basin",
     "habitat": "Forest Habitat",
     "endangeredLvl": "Endangered",
@@ -62,7 +62,7 @@
   {
     "name": "Greater sage-grouse",
     "species": "Centrocercus urophasianus",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Centrocercus_urophasianus_-USA_-male-8.jpg/1920px-Centrocercus_urophasianus_-USA_-male-8.jpg",
     "region": "Northern Great Plains",
     "habitat": "Grasslands",
     "endangeredLvl": "Near Threatened",
@@ -72,7 +72,7 @@
   {
     "name": "Mountain Gorilla",
     "species": "Gorilla beringei beringei",
-    "picture": "testing",
+    "picture": "https://ugandasafaristours.com/wp-content/uploads/2017/06/VirungaMountainGorilla.jpg",
     "region": "Congo Basin",
     "habitat": "Forest Habitat, Mountains",
     "endangeredLvl": "Critically Endangered",
@@ -82,17 +82,17 @@
   {
     "name": "Marine iguana",
     "species": "Amblyrhynchus cristatus",
-    "picture": "testing",
-    "region": "`Galápagos`",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Amblyrhynchus_cristatus_%283838137696%29.jpg/1599px-Amblyrhynchus_cristatus_%283838137696%29.jpg",
+    "region": "Galápagos",
     "habitat": "Ocean Habitat",
     "endangeredLvl": "Vulnerable",
     "population": "unknown",
-    "about": "Marine iguanas are the world's only oceangoing lizard and only found in the `Galápagos`. The marine iguanas reside on a central tourist beach in Perto Villamil on Isabel Island, sharing their home with tourists. As more people move to the island, the largest threat are introduced species like cats and dogs, along with climate change. "
+    "about": "Marine iguanas are the world's only oceangoing lizard and only found in the Galápagos. The marine iguanas reside on a central tourist beach in Perto Villamil on Isabel Island, sharing their home with tourists. As more people move to the island, the largest threat are introduced species like cats and dogs, along with climate change."
   },
   {
     "name": "Sumatran rhinos",
     "species": "Dicerorhinus sumatrensis",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/SumatranRhino3_CincinnatiZoo.jpg/1495px-SumatranRhino3_CincinnatiZoo.jpg",
     "region": "Borneo and Sumatra",
     "habitat": "Forest Habitat",
     "endangeredLvl": "Critically Endangered",
@@ -102,7 +102,7 @@
   {
     "name": "Kagu",
     "species": "Rhynochetos jubatus",
-    "picture": "testing",
+    "picture": "https://pbs.twimg.com/media/DdVE48MVMAAGuT9.jpg",
     "region": "New Caledonia",
     "habitat": "Forest Habitat",
     "endangeredLvl": "Critically Endangered",
@@ -112,7 +112,7 @@
   {
     "name": "African Wild Dogs",
     "species": "Lycaon pictus",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/African_painted_dog%2C_or_African_wild_dog%2C_Lycaon_pictus_at_Savuti%2C_Chobe_National_Park%2C_Botswana._%2832318493420%29.jpg/1599px-African_painted_dog%2C_or_African_wild_dog%2C_Lycaon_pictus_at_Savuti%2C_Chobe_National_Park%2C_Botswana._%2832318493420%29.jpg",
     "region": "Coastal East Africa",
     "habitat": "Forest Habitat, Grasslands, Deserts",
     "endangeredLvl": "Endangered",
@@ -122,7 +122,7 @@
   {
     "name": "Saola",
     "species": "Pseudoryx nghetinhensis",
-    "picture": "testing",
+    "picture": "https://c1.staticflickr.com/9/8046/28560535993_750f18fb74_b.jpg",
     "region": "Greater Mekong",
     "habitat": "Forest Habitat",
     "endangeredLvl": "Critically Endangered",
@@ -132,7 +132,7 @@
   {
     "name": "Black-footed Ferret",
     "species": "Mustela nigripes",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Mustela_nigripes_2.jpg",
     "region": "Northern Great Plains",
     "habitat": "Grasslands",
     "endangeredLvl": "Endangered",
@@ -142,7 +142,7 @@
   {
     "name": "Hector's Dolphins",
     "species": "Cephalorhynchus hectori",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/DuskyDolphin.jpg/532px-DuskyDolphin.jpg",
     "region": "New Zealand",
     "habitat": "Ocean Habitat",
     "endangeredLvl": "Endangered",
@@ -152,7 +152,7 @@
   {
     "name": "Red Panda",
     "species": "Ailurus fulgens",
-    "picture": "testing",
+    "picture": "https://www.publicdomainpictures.net/pictures/160000/velka/panda-rouge-ailurus-fulgens-1456513489Hmp.jpg",
     "region": "Eastern Himalayas",
     "habitat": "Forest Habitat",
     "endangeredLvl": "Endangered",
@@ -160,9 +160,9 @@
     "about": "Recognized by their thick russet fur and white facial markings, red pandas are very skillful and acrobatic animals that predominantly stay in trees. Climate change and loss of nesting trees are the greatest cause of decline in population, along with poaching."
   },
   {
-    "name": "`Grevy's` Zebra",
+    "name": "Grevy's Zebra",
     "species": "Equus grevyi",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Equus_grevyi_1.jpg",
     "region": "Kenya and Samburu",
     "habitat": "Grasslands and savannas",
     "endangeredLvl": "Endangered",
@@ -172,7 +172,7 @@
   {
     "name": "Central American River Turtle",
     "species": "Dermatemys mawii",
-    "picture": "testing",
+    "picture": "https://www.edgeofexistence.org/wp-content/uploads/2017/11/Dermatemys-mawii_Dustin-Smith-1000x667.jpg",
     "region": "Belize, southern Mexico, Guatemala",
     "habitat": "River Habitat",
     "endangeredLvl": "Critically Endangered",
@@ -182,7 +182,7 @@
   {
     "name": "North Atlantic Right Whale",
     "species": "Eubalaena glacialis",
-    "picture": "testing",
+    "picture": "https://upload.wikimedia.org/wikipedia/commons/2/26/Eubalaena_glacialis_smiling.jpg",
     "region": "North America",
     "habitat": "Ocean Habitat",
     "endangeredLvl": "Endangered",
@@ -192,7 +192,7 @@
   {
     "name": "Cross River Gorilla",
     "species": "Gorilla gorilla diehli",
-    "picture": "testing",
+    "picture": "https://c1.staticflickr.com/1/152/333862026_c112c53e6d_b.jpg",
     "region": "Congo Basin",
     "habitat": "Forest Habitat",
     "endangeredLvl": "Critically Endangered",
