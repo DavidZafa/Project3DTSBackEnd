@@ -28,7 +28,6 @@ const cors = require('cors')
 const passport = require('./config/passport')()
 
 const app = express()
-// const userController = require('./controllers/user.js')
 
 app.use(cors())
 app.use(parser.json())
