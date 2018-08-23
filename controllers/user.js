@@ -7,7 +7,7 @@ const News = require("../models/News")
 
 module.exports = {
   show: (req, res) => {
-<<<<<<< HEAD
+
     User.findOne({ _id: req.params.id })
       .populate("animals")
       .then(res => {
@@ -26,13 +26,17 @@ module.exports = {
             res.json({
               token: token
             });
-=======
+
         User.findOne({_id: req.params.id})
         .populate("animalList")
         .then(user => {
             res.json(user)
         })
-    },
+    }
+  }
+})
+    }},
+
     createLogin: (req,res) => {
       if (req.body.email && req.body.password) {
         User.findOne({ email: req.body.email }).then(user => {
@@ -48,11 +52,11 @@ module.exports = {
             } else {
               res.sendStatus(401)
             }
->>>>>>> testing-json-data
+
           } else {
             res.sendStatus(401);
           }
-<<<<<<< HEAD
+
         } else {
           res.sendStatus(401);
         }
@@ -80,7 +84,7 @@ module.exports = {
               res.json({
                 token: token
               });
-=======
+
         })
       } else {
         res.sendStatus(401)
