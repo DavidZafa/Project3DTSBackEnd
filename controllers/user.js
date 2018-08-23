@@ -23,6 +23,7 @@ module.exports = {
               }
               var token = jwt.encode(payload, config.jwtSecret)
               res.json({
+                payload,
                 token: token
               })
             } else {
@@ -49,7 +50,7 @@ module.exports = {
                 .then(user => {
                   if (user) {
                     var payload = {
-                      id: newUser.id
+                      id: user.id
                     }
                     var token = jwt.encode(payload, config.jwtSecret)
                     res.json({
@@ -82,7 +83,7 @@ module.exports = {
     removeAnimal: (req, res) => {
       User.findOne({_id: req.params.id})
       .then(user => {
-        Animals.findOne({name: req.body.animalname})
+        Animals.findOne({name: req.body.name})
         .then(animal => {
           user.animalList.pull(animal)
           user.save()
