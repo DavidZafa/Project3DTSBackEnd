@@ -1,9 +1,9 @@
-const mongoose = require("../models/User")
-const User = mongoose.model('User')
-const config = require("../config/config")
-const jwt = require('jwt-simple')
-const Animals = require("../models/Animals")
-const News = require("../models/News")
+const mongoose = require("../models/User");
+const User = mongoose.model("User");
+const config = require("../config/config");
+const jwt = require("jwt-simple");
+const Animals = require("../models/Animals");
+const News = require("../models/News");
 
 module.exports = {
   show: (req, res) => {
@@ -29,6 +29,7 @@ module.exports = {
             } else {
               res.sendStatus(401)
             }
+
           } else {
             res.sendStatus(401)
           }
@@ -122,7 +123,7 @@ module.exports = {
         })
       })
       .catch(err => {
-        console.log(err)
-      })
-    }
-}
+        console.log(err);
+      });
+  }
+};
