@@ -23,7 +23,7 @@ module.exports = {
             };
             var token = jwt.encode(payload, config.jwtSecret);
             res.json({
-              payload,
+              payload: user.id,
               token: token
             });
           } else {
