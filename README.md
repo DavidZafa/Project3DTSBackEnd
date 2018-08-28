@@ -2,18 +2,19 @@
 
 # DangerZone
 
-Welcome to DangerZone, a full-stack web application created by three budding developers that combines our love for animals with our desire to collaborate and learn React. DangerZone educates users about endangered species and allows logged-in users to add their favorite endangered animal to their own profile page. Members also have access to news articles specifically about endangered animals and how you can help keep our beloved animals alive.
+Welcome to DangerZone, a full-stack web application created by three budding developers that combines our love of animals with our desire to collaborate and learn React. DangerZone educates users about endangered species and allows logged-in users to add their favorite endangered animal to their own profile page. Members also have access to news articles specifically about endangered animals and how you can help keep our beloved animals alive.
 
 - Full-Stack
-- Mongoose, Express, React, Node.js (MERN)
+- Mongoose, Express, React, Node.js (MERN) for Backend
+- React for Frontend
 
 ## Technologies Used
 
-- reactjs.org - React for our Front-End framework
 - [node.js] - event-driven I/O for the backend
 - [Express] - fast node.js network app framework
 - [Mongoose](https://mongoosejs.com/)- To query mongodb
 - [Mongodb](https://www.mongodb.com/)- For local hosting
+- [CORS](https://enable-cors.org/) - Cross Origin Resoursces Sharing
 - Visual Studio Code Editor - awesome text editor
 - Atom - Another awesome text editor
 
@@ -52,17 +53,27 @@ We decided to separate our routes into its own index.js to separate our concerns
 
 ### Models
 
-We have three models with DangerZone. An Anmials model with details about each animal in our database, News model that holds our news articles about endangered animals. And a User model with with a reference to the Animal model since we want each user to be able to update his/her account to add an animal.
+We have three models with DangerZone:
+
+- Anmials model: Stores details about each animal, such as animal name, species name, image, habitat, endangerment level, and etc in our database
+- News model: Stores our news articles about endangered animals with important information such as title, author, image, post, and etc.
+- User model: Holds important User information needed to create an account and log in such as email and password. There is a reference to the Animal model since each User can update his/her individual User page to add an animal.
+
+### Git Workflow
+
+We chose the Feature Branch Workflow. All individuals had access to the master branch, but we created our own DEV branch to work on and test routes. We would then merge our changes to DEV and if DEV works, then will merge to master.
 
 ## Difficulties and Unsolved Problems
 
-Our biggest challenge with the backend was storing the image files correctly to render properly in the front-end.
+Our biggest challenge was connecting the backend routes with the frontend code to render properly. We finished our backend routes and tested with Postman successfully; however, retrieving information from the database to render on the frontend was difficult. This was especially true for User Authentication. We wanted to apply what we learned with JSON Web Token to this project and opted for JWT authentication but learned that we needed to flesh out full CRUD with a minimally viable product before tackling authentication.
+
+It was also a challenge storing the images as a value in a json object to render but we eventually resolved this issue by using Creative Commons images that were open-source.
 
 ## Getting Started
 
 DangerZone requires [Node.js](https://nodejs.org/) v8+ to run.
 Fork and clone the Github repo to get a copy of this project to your local machine.
-After you fork and clone the repo, open your favorite terminal and install dependencies and devDependencies and start the server.
+After you fork and clone the repo, open your favorite terminal and install dependencies and devDependencies and start the server by:
 \*\* DangerZone uses MongoDB as our local host server.
 
 ```sh
@@ -76,6 +87,11 @@ $ code .
 - [Express.js](https://expressjs.com/) - The web framework used
 - [Node.js](https://nodejs.org/en/) - Dependency Management
 - [MongoDB](https://www.mongodb.com/download-center#atlas) - Used to host local and remote DB.
+- [React](https://reactjs.org/) - For the Frontend
+
+## Deployed to
+
+Heroku using MLab.
 
 ## Authors
 
