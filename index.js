@@ -19,11 +19,12 @@
 
 /* FROM LAB START*/
 const express = require("express");
-const parser = require("body-parser");
 const cors = require("cors");
+const parser = require("body-parser");
 const passport = require("./config/passport")();
 const app = express();
 
+app.use(cors());
 app.use(function(req, res, next) {
   // Website you wish to allow to connect
   res.setHeader("Access-Control-Allow-Origin", "*");
