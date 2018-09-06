@@ -6,9 +6,9 @@
 
 // app.use(cors())
 // app.use(bodyParser.json())
-// app.use(bodyParser.urlencoded({     
+// app.use(bodyParser.urlencoded({
 //     extended: true
-//   })); 
+//   }));
 // app.use(passport.initialize())
 // app.use(require('./routes/index.js'))
 
@@ -17,28 +17,62 @@
 //     console.log('GET READY TO GET RICKETY RICKETY RECKED - on port 3001')
 // })
 
-
-
-
-
 /* FROM LAB START*/
-const express = require('express')
-const parser = require('body-parser')
-const cors = require('cors')
-const passport = require('./config/passport')()
+const express = require("express");
+const parser = require("body-parser");
+const cors = require("cors");
+const passport = require("./config/passport")();
+const app = express();
 
-const app = express()
+app.use(function(req, res, next) {
+  // Website you wish to allow to connect
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
-app.use(cors())
-app.use(parser.json())
-app.use(passport.initialize())
+  // Request methods you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
 
-app.use(require('./routes/index'))
+  // Request headers you wish to allow
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
 
-app.set('port', process.env.PORT || 3001)
-app.listen(app.get('port'), () => {
-    console.log('GET READY TO GET RICKETY RICKETY RECKED - on port 3001')
-})
+  // Set to true if you need the website to include cookies in the requests sent
+  // to the API (e.g. in case you use sessions)
+  res.setHeader("Access-Control-Allow-Credentials", true);
 
+  // Pass to next layer of middleware
+  next();
+});
+app.use(parser.json());
+app.use(passport.initialize());
+app.use(require("./routes/index"));
+app.set("port", process.env.PORT || 3001);
+app.listen(app.get("port"), () => {
+  console.log("GET READY TO GET RICKETY RICKETY RECKED - on port 3001");
+});
 
 /* FROM LAB END*/
+
+// CORS
+// app.use(function (req, res, next) {
+
+//     // Website you wish to allow to connect
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+
+//     // Request methods you wish to allow
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+//     // Request headers you wish to allow
+//     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+//     // Set to true if you need the website to include cookies in the requests sent
+//     // to the API (e.g. in case you use sessions)
+//     res.setHeader('Access-Control-Allow-Credentials', true);
+
+//     // Pass to next layer of middleware
+//     next();
+// });
