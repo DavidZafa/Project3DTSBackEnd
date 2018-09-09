@@ -85,7 +85,7 @@ module.exports = {
   removeAnimal: (req, res) => {
     User.findOne({ _id: req.params.id })
       .then(user => {
-        Animals.findById({ name: req.body.name }).then(animal => {
+        Animals.findOne({ name: req.body.name }).then(animal => {
           console.log(animal);
           user.animalList.pull(animal);
           user.save();
