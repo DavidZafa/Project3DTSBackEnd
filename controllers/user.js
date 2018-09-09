@@ -73,6 +73,9 @@ module.exports = {
     User.findById(req.params.id).then(user => {
       Animals.findOne({ name: req.body.name }).then(animal => {
         console.log(animal);
+        if(user.animalList.includes(animal)){
+          return
+        }
         user.animalList.push(animal);
         user.save();
         console.log(user);
@@ -82,11 +85,11 @@ module.exports = {
   removeAnimal: (req, res) => {
     User.findOne({ _id: req.params.id })
       .then(user => {
-        Animals.findOne({ name: req.body.name }).then(animal => {
+        Animals.findById({ name: req.body.name }).then(animal => {
           console.log(animal);
           user.animalList.pull(animal);
           user.save();
-          return res.json({ msg: "Sucess", id: req.body.name });
+          return res.json({ msg: "Success", name: req.body.name });
         });
       })
       .catch(err => {
