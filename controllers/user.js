@@ -110,16 +110,37 @@ module.exports = {
     });
   },
   removeAnimal: (req, res) => {
+    // User.findOne({ _id: req.params.id })
+    //   .then(user => {
+    //     Animals.findOne({ name: req.body.name })
+    //     .populate({
+    //       path: "animaList"
+    //     })
+    //     .then(animal => {
+    //       user.animalList.pull(animal);
+    //       user.save();
+    //       console.log(user);
+    //     });
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //   });
     User.findOne({ _id: req.params.id })
-      .then(user => {
-        Animals.findOne({ name: req.body.name }).then(animal => {
-          user.animalList.pull(animal);
-          user.save();
-          console.log(user);
-        });
+      .populate({
+        path: "animalList"
+      })
+      .then(animal => {
+        Animals.findOneAndRemove({ name: req.body.name });
+        user.save();
+        console.log(user);
       })
       .catch(err => {
         console.log(err);
       });
+  }
+  delete: (req, res) => {
+  User.findOneAndRemove({ _id: req.params.id }).then(() => {
+  res.redirect("/");
+  });
   }
 };
