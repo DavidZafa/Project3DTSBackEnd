@@ -73,8 +73,8 @@ module.exports = {
     User.findById(req.params.id).then(user => {
       Animals.findOne({ name: req.body.name }).then(animal => {
         console.log(animal);
-        if(user.animalList.includes(animal)){
-          return
+        if (user.animalList.includes(animal)) {
+          return;
         }
         user.animalList.push(animal);
         user.save();
@@ -96,10 +96,5 @@ module.exports = {
         console.log(err);
         return res.json({ msg: "Failed" });
       });
-  }
-  delete: (req, res) => {
-  User.findOneAndRemove({ _id: req.params.id }).then(() => {
-  res.redirect("/");
-  });
   }
 };

@@ -12,7 +12,6 @@ router.delete("/user/:id/animal/name/delete", userController.removeAnimal);
 // router.get("/user/logout", userController.logout);
 
 router.get("/user/:id", userController.show);
-router.delete("user/:id", userController.delete);
 
 // GET ALL ANIMALS
 router.get("/animals", animalsController.index);
