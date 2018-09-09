@@ -23,7 +23,7 @@ module.exports = {
             };
             var token = jwt.encode(payload, config.jwtSecret);
             res.json({
-              payload: user.id,
+              payload,
               token: token
             });
           } else {
@@ -52,8 +52,7 @@ module.exports = {
               };
               var token = jwt.encode(payload, config.jwtSecret);
               res.json({
-                token: token,
-                payload: user.id
+                token: token
               });
             } else {
               console.log("here");
@@ -69,40 +68,14 @@ module.exports = {
       console.log("everywhere");
       res.sendStatus(401);
     }
-
-    // if (req.body.email && req.body.password) {
-    //   let newUser = {
-    //     email: req.body.email,
-    //     password: req.body.password
-    //   }
-    //   User.findOne({ email: req.body.email })
-    //     .then((user) => {
-    //       if (!user) {
-    //         User.create(newUser).then(user => {
-    //             if (user) {
-    //               var payload = {
-    //                 // id: user.id
-    //                 id: newUser.id
-    //               }
-    //               var token = jwt.encode(payload, config.jwtSecret)
-    //               res.json({
-    //                 token: token
-    //               })
-    //             } else {
-    //               res.sendStatus(401)
-    //             }
-    //           })
-    //       } else {
-    //         res.sendStatus(401)
-    //       }
-    //     })
-    // } else {
-    //   res.sendStatus(401)
-    // }
   },
   addAnimal: (req, res) => {
     User.findById(req.params.id).then(user => {
       Animals.findOne({ name: req.body.name }).then(animal => {
+        console.log(animal);
+        if(user.animalList.includes(animal)){
+          return
+        }
         user.animalList.push(animal);
         user.save();
         console.log(user);
@@ -110,32 +83,18 @@ module.exports = {
     });
   },
   removeAnimal: (req, res) => {
-    // User.findOne({ _id: req.params.id })
-    //   .then(user => {
-    //     Animals.findOne({ name: req.body.name })
-    //     .populate({
-    //       path: "animaList"
-    //     })
-    //     .then(animal => {
-    //       user.animalList.pull(animal);
-    //       user.save();
-    //       console.log(user);
-    //     });
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   });
     User.findOne({ _id: req.params.id })
-      .populate({
-        path: "animalList"
-      })
-      .then(animal => {
-        Animals.findOneAndRemove({ name: req.body.name });
-        user.save();
-        console.log(user);
+      .then(user => {
+        Animals.findOne({ name: req.body.name }).then(animal => {
+          console.log(animal);
+          user.animalList.pull(animal);
+          user.save();
+          return res.json({ msg: "Success", name: req.body.name });
+        });
       })
       .catch(err => {
         console.log(err);
+        return res.json({ msg: "Failed" });
       });
   }
   delete: (req, res) => {

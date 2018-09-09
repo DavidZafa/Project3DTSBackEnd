@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const express = require('express')
 // const cors = require('cors')
 // const bodyParser = require('body-parser');
@@ -29,12 +30,34 @@ app.use(cors());
 app.use(parser.json());
 app.use(passport.initialize());
 app.use(require("./routes/index"));
+=======
+/* FROM LAB START*/
+const express = require("express");
+const parser = require("body-parser");
+const cors = require("cors");
+const passport = require("./config/passport")();
+
+const app = express();
+
+var corsOptions = {
+  origin: "*",
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+};
+
+app.use(cors(corsOptions));
+app.use(parser.json());
+app.use(passport.initialize());
+
+app.use(require("./routes/index"));
+
+>>>>>>> 0ffc1b05f082953cb8adcd1d1ea2574ce0a35a50
 app.set("port", process.env.PORT || 3001);
 app.listen(app.get("port"), () => {
   console.log("GET READY TO GET RICKETY RICKETY RECKED - on port 3001");
 });
 
 /* FROM LAB END*/
+<<<<<<< HEAD
 
 // CORS
 // app.use(function (req, res, next) {
@@ -55,3 +78,5 @@ app.listen(app.get("port"), () => {
 //     // Pass to next layer of middleware
 //     next();
 // });
+=======
+>>>>>>> 0ffc1b05f082953cb8adcd1d1ea2574ce0a35a50
