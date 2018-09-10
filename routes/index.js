@@ -14,6 +14,7 @@ router.get("/user/:id", userController.show);
 
 // GET ALL ANIMALS
 router.get("/animals", animalsController.index);
+// router.post("/animals", animalController.post);
 
 //GET SPECIFIC ANIMAL /:ID
 router.get("/animals/:id", animalsController.singleAnimal);
