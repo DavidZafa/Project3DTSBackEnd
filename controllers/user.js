@@ -73,6 +73,7 @@ module.exports = {
     User.findById(req.params.id).then(user => {
       Animals.findOne({ name: req.body.name }).then(animal => {
         console.log(animal);
+
         if(user.animalList.includes(animal)){
           return
         }
@@ -89,6 +90,7 @@ module.exports = {
           console.log(animal);
           user.animalList.pull(animal);
           user.save();
+          return res.json({ msg: "Sucess", id: req.body.name });
           return res.json({ msg: "Success", name: req.body.name });
         });
       })
